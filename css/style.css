@@ -1,8 +1,150 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-h1 {
-    color: red;
+.red  {
+    background-color: #C54346;
+    color: #FEFEFE;
 }
+
+.yellow {
+    background-color: #E6D09F;
+}
+
+.pink {
+    background-color: #D89899;
+}
+
+.menu h2 {
+    font-family: cursive, serif;
+}
+
+.main h4 {
+    width: 42%;
+    padding: 5px 15px;
+    text-align: center;
+}  
+
+.main p {
+    padding: 20px 15px;
+    margin-top: 1.5rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+}
+
+
+.menu {
+    width: 100%;
+    margin: 3% auto 6% auto;
+    text-align: center;
+}
+
+.row-1, .row-2, .row-3 {
+    background-color: #989898;
+    border: 2px solid black;
+}
+
+
+
+
+@media (min-width: 992px) {
+    section {
+        width: 96%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .row-1, .row-2, .row-3 {
+        width: 32%;
+    }
+    
+    .main {
+        position: relative;
+    }
+
+    .main h4 {
+        font-size: 1.2rem;
+        float: right;
+        border-bottom: 2px solid black;
+        border-left: 2px solid black;
+
+    }
+
+    .main p {
+        font-size: 0.9rem;
+    }
+
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) { 
+    section {
+        width: 92%;
+        margin: 0 auto;
+    }
+
+    .main {
+        justify-content: space-around;
+    }
+
+    .row-1, .row-2 {
+        width: 48%;
+        float: left;
+        margin-bottom: 2rem;
+    }
+
+    .row-2 {
+        float: right;
+    }
+
+    .row-3 {
+        float: left;
+    }
+
+    .main p {
+        font-size: 0.9rem;
+        padding: 1.5rem;
+    }
+
+    .row-1, .row-2, .row-3{
+        position: relative;
+    }
+
+    .row-3 h4 {
+        width: 20%;
+    }
+
+    .main h4 {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 1rem;
+        border-bottom: 2px solid black;
+        border-left: 2px solid black;
+    }
+}
+
+@media (max-width: 767px) {
+    .row-1, .row-2, .row-3{
+        position: relative;
+        width: 80%;
+        margin: 1.2rem auto;
+    }
+
+    .main h4 {
+        width: 30%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-bottom: 2px solid black;
+        border-left: 2px solid black;
+    }    
+
+    .main p {
+        padding: 1.5rem;
+    }
+}
+
